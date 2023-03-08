@@ -89,15 +89,15 @@ public class Electrodomestico {
     public String comprobarColor(String color){
         String col;
         switch(color){
-            case "Blanco":
-            case "Negro":
-            case "Rojo":
-            case "Azul":
-            case "Gris":
+            case "blanco":
+            case "negro":
+            case "rojo":
+            case "azul":
+            case "gris":
                 col = color;
                 break;
             default:
-                col = "Blanco";
+                col = "blanco";
                 break;
         }
         return col;
@@ -108,9 +108,9 @@ public class Electrodomestico {
         System.out.println("Ingrese el precio:");
         int p = leer.nextInt();
         System.out.println("Ingrese el consumo energético:");
-        char c = comprobarConsumoEnergetico(leer.next().charAt(0));
+        char c = comprobarConsumoEnergetico(leer.next().toLowerCase().charAt(0));
         System.out.println("Ingrese el color: ");
-        String col = comprobarColor(leer.next());
+        String col = comprobarColor(leer.next().toLowerCase());
         System.out.println("Ingrese el peso:");
         int peso = leer.nextInt();
         
