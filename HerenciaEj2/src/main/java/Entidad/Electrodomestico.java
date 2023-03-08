@@ -83,7 +83,7 @@ public class Electrodomestico {
         if (letra >= 'a' && letra <= 'f'){
             c = letra;
         }
-        return letra;
+        return c;
     }
     
     public String comprobarColor(String color){
@@ -105,8 +105,7 @@ public class Electrodomestico {
     
     public void crearElectrodomestico(){
         Scanner leer = new Scanner(System.in);
-        System.out.println("Ingrese el precio:");
-        int p = leer.nextInt();
+        int p = 1000;
         System.out.println("Ingrese el consumo energético:");
         char c = comprobarConsumoEnergetico(leer.next().toLowerCase().charAt(0));
         System.out.println("Ingrese el color: ");

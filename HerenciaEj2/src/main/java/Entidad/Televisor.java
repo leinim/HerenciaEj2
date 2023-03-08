@@ -71,8 +71,7 @@ public class Televisor extends Electrodomestico{
     }
     
     public void crearTelevisor(){
-        super.crearElectrodomestico();
-        
+        super.crearElectrodomestico();        
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese la resolucion en pulgadas:");
         int res = leer.nextInt();
